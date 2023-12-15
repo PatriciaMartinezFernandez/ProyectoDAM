@@ -370,5 +370,501 @@
         <p>Si la conversión es de octal a decimal se procederá como observas en el ejemplo:</p>
 
         <p>Ejemplo: 740<sub>8</sub> = 7x8<sup>2</sup> + 4x8<sup>1</sup> + 0x8<sup>0</sup> = 480<sub>10</sub></p>
+    
+        <p><b>Conversión de decimal a octal</b></p>
+
+        <br>
+
+        <p>Si la conversión es de decimal a octal se procederá de modo similar a la conversión de decimal a binario, pero dividiendo entre 8.</p>
+
+        <br>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nº Decimal</th>
+                    <th>Base</th>
+                    <th>Cociente</th>
+                    <th>Resto</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>345</td>
+                    <td>8</td>
+                    <td>43</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>43</td>
+                    <td>8</td>
+                    <td>5</td>
+                    <td>3</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>Obteniendo el siguiente resultado <small>(recuerda que se coge el último cociente y todos los restos empezando por el último hasta el primero)</small>:</p>
+        
+        <br>
+
+        <p>Ejemplo: 345<sub>10</sub> = 531<sub>8</sub></p>
+
+        <br>
+
+        <p><b>Conversión de binario a hexadecimal</b></p>
+
+        <br>
+
+        <p>La conversión entre binario y hexadecimal implica agrupar los bits de 4 en 4 y considerar caracteres hexadecimales. Es un proceso similar al de la conversión entre octal y binario.</p>
+
+        <br>    
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Sistema binario</th>
+                    <th>Sistema Hexadecimal</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>0000</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>0001</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>0010</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>0011</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>0100</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>0101</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>0110</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>0111</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>1000</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>1001</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>1010</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td>1011</td>
+                    <td>B</td>
+                </tr>
+                <tr>
+                    <td>1100</td>
+                    <td>C</td>
+                </tr>
+                <tr>
+                    <td>1101</td>
+                    <td>D</td>
+                </tr>
+                <tr>
+                    <td>1110</td>
+                    <td>E</td>
+                </tr>
+                <tr>
+                    <td>1111</td>
+                    <td>F</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br>
+
+        <p>Ejemplo: 1011111,110001<sub>2</sub> = 5F,C4<sub>16</sub></p>
+
+        <br>
+
+        <p><b>Conversión de decimal a hexadecimal</b></p>
+
+        <br>
+
+        <p>En la conversión de decimal a hexadecimal, se dividen los números por 16. Los restos son los dígitos hexadecimales, con el primer resto como la unidad de orden 0, el segundo como el orden 1, y así sucesivamente. El último cociente es la cifra de mayor orden.</p>
+
+        <br>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nº Decimal</th>
+                    <th>Base</th>
+                    <th>Cociente</th>
+                    <th>Resto</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1234</td>
+                    <td>16</td>
+                    <td>77</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>77</td>
+                    <td>16</td>
+                    <td>4</td>
+                    <td>13</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br>
+
+        <p>Ejemplo: 1234<sub>10</sub> = 4D2<sub>16</sub></p>
+
+        <br>
+
+        <h1>1.5.3. La codificación alfanumérica</h1>
+
+        <br>
+
+        <p>Los sistemas de codificación alfanumérica más destacados son:</p>
+
+        <br>
+
+        <p><b>Código ASCII:</b></p>
+
+        <ul>
+            <li>Utiliza 1 byte (7 bits) para codificar letras y caracteres informáticos.</li>
+            <li>Ofrece 128 caracteres.</li>
+            <li>ASCII extendido usa 8 bits llegando a 256 caracteres.</li>
+            <li>En Windows, Alt + código ASCII;</li>
+            <li>En Linux, CTRL + SHIFT + U</li>
+        </ul>
+
+        <p><b>Código EBCDIC (Extended BCD Interchange Code):</b></p>
+
+        <ul>
+            <li>Representa cada símbolo con 8 bits en dos bloques de cuatro.</li>
+        </ul>
+
+        <p><b>Código FIELDATA:</b></p>
+
+        <ul>
+            <li>Usa bloques de 6 bits, poco común, utilizado en sistema de 36 bits</li>
+        </ul>
+
+        <p><b>Código Unicode:</b></p>
+
+        <ul>
+            <li>Proporciona un número único para cada carácter, independientemente de plataforma o idioma.</li>
+            <li>Unicode es de 16 bits (2 bytes), permitiendo 65,535 caracteres distintos.</li>
+            <li>Es esencial para estándares modernos como XML y Java.</li>
+            <li>Compatible con varios sistemas operativos y navegadores.</li>
+        </ul>
+
+        <br>
+
+        <h1>1.5.4. Operaciones aritméticas y lógicas con variables binarias</h1>
+
+        <br>
+
+        <p><b>Rango:</b> Conjunto de cantidades representables en un sistema de representación.</p>
+        <p><b>Desbordamiento:</b> Resultado inválido debido a que la cantidad obtenida está fuera del rango <small>(Puede ocurrir al sumar cantidades del mismo signo, restar cantidades de signo opuesto o multiplicar cualquier cantidad)</small></p>
+
+        <br>
+
+        <p><b>Operaciones binarias:</b></p>
+
+        <br>
+
+        <p>Suma: 0 + 0 = 0, 0 + 1 = 1 + 0 = 1, 1 + 1 = 0 con acarreo 1</p>
+        <p>Resta: 0 - 0 = 1 - 1 = 0, 1 - 0 = 1, 0 - 1 = 1 con acarreo 1 negativo</p>
+        <p>Multiplicación: 0 x 0 = 0, 1 x 0 = 0 x 1 = 0, 1 x 1 = 1</p>
+        <p>División: 1 / 0 = 0, 1 / 1 = 1</p>
+
+        <br>
+
+        <h1>1.6. Los componentes software. Sistemas operativos y aplicaciones</h1>
+
+        <br>
+
+        <p>El software es el componente lógico del ordenador que incluye instrucciones y aplicaciones esenciales. Se divide en software de sistema, que gestiona recursos, y software de aplicación, diseñado para tareas específicas del usuario.</p>
+    
+        <br>
+
+        <p><b>Software de Sistema:</b> Incluye todos aquellos programas indispensables para que la máquina funcione. Por ejemplo:</p>
+        <ul>
+            <li>Sistemas Operativos</li>
+            <li>Lenguajes de Programación</li>
+            <li>Drivers</li>
+        </ul>
+
+        <br>
+
+        <p><b>Software de Aplicación:</b> Son los programas que maneja el usuario para el procesamiento de los datos. Los más habituales son:</p>
+        <ul>
+            <li>Tratamiento de textos</li>
+            <li>Bases de datos</li>
+            <li>Hojas de cálculos</li>
+        </ul>
+
+        <br>
+
+        <h1>2. Componentes de equipos microinformáticos I</h1>
+
+        <br>
+
+        <p><b>Caja:</b> Elegir la caja adecuada para los componentes es clave para el rendimiento y durabilidad. Desde torres completas para configuraciones avanzadas hasta cajas medianas versátiles y opciones compactas en formato mini, cada tipo tiene sus ventajas. Además, el factor de forma (EATX, ATX, microATX, etc.) define la compatibilidad física con la placa base y la fuente de alimentación. Entender estos conceptos básicos facilita la elección de la caja que mejor se ajuste a las necesidades y preferencias.</p>
+    
+        <br>
+
+        <p><b>Placa base:</b> La placa base, o motherboard, es crucial para conectar y coordinar componentes en un ordenador. Su factor de forma (EATX, ATX, microATX, miniITX) determina sus características y compatibilidad. Alberga el zócalo de la CPU, ranuras de memoria RAM, expansión (PCI Express, PCI), conectores de almacenamiento (SATA), USB, PS/2, red, chipset, batería CMOS, alimentación ATX, mSATA/M.2 NVME, botones, BIOS, caché y VRM. Estos elementos colaboran para el correcto funcionamiento y coordinación del sistema.</p>
+    
+        <br>
+
+        <p><b>Fuente de alimentación:</b> La fuente de alimentación convierte la corriente alterna en continua y es crucial para sistemas potentes, especialmente para tarjetas gráficas de alta gama. Factores como el formato, líneas de voltaje (+12V es vital) y conectores son esenciales. Características clave incluyen el Factor de Corrección de Potencia (PFC), potencia máxima y tipo/número de conectores. La longitud debe adaptarse al espacio disponible en la caja del ordenador. Elegir una fuente de calidad es fundamental para evitar problemas en los equipos informáticos.</p>
+    
+        <br>
+
+        <p><b>Microprocesador:</b> El microprocesador, esencial para el procesamiento, se elige entre Intel y AMD según la compatibilidad con la placa base. Factores clave incluyen velocidad, núcleos, memoria caché y tecnología de fabricación. La arquitectura x86 garantiza compatibilidad, y la elección entre 32 y 64 bits afecta la gestión de RAM. La memoria caché mejora el rendimiento almacenando datos frecuentes. La refrigeración, con disipador y ventilador, es crucial para controlar el calor generado por el microprocesador.</p>
+    
+        <br>
+
+        <p><b>Memoria RAM:</b> La RAM (memoria de acceso aleatorio) almacena datos e instrucciones durante el uso del ordenador. Es esencial para el arranque del sistema y su rendimiento. La velocidad de reloj, latencias, ancho de banda y tecnología Dual Channel son características clave. El voltaje, aunque determinado por el tipo de memoria, puede afectar la estabilidad y el rendimiento, especialmente en overclocking. La elección adecuada de tipo y tamaño de memoria es crucial para el rendimiento y la estabilidad del sistema.</p>
+    
+        <br>
+
+        <p><b>Chipset:</b> El chipset, esencial en una placa base, controla y coordina la comunicación entre la CPU, memoria y otros componentes de la computadora. Actúa como el centro de mando, dictando la compatibilidad y capacidades del sistema, incluyendo opciones de expansión y overclocking. Su elección impacta directamente en la funcionalidad y rendimiento de la placa base.</p>
+    
+        <br>
+
+        <p><b>Buses de expansión:</b> Los buses son los canales de comunicación esenciales en un ordenador, conectando componentes como el microprocesador, la memoria y las ranuras de expansión. Algunos tipos clave incluyen ISA (obsoleto), PCI, AGP (reemplazado por PCI Express), y PCI Express. Estos buses facilitan el movimiento eficiente de datos dentro del sistema.</p>
+    
+        <br>
+
+        <p><b>BIOS:</b> La BIOS, creada en 1975, es el Basic Input Output System que inicia el hardware y el sistema operativo al encender el ordenador. Configurable para ajustes esenciales, como fecha, hora y orden de arranque. Su información se almacena en un chip CMOS. Actualmente, existen dos tipos de BIOS: LEGACY y UEFI. En general, no es necesario configurarlo, ya que detecta automáticamente la configuración óptima.</p>
+    
+        <br>
+
+        <p><b>Conectores del panel frontal:</b> Los Conectores del Front Panel son jumpers que facilitan la conexión del cable de encendido, botón de reset, LED de actividad del disco duro y LED de actividad del equipo en el panel frontal de la computadora.</p>
+    
+        <br>
+
+        <h1>3. Componentes de equipos microinformáticos II</h1>
+
+        <br>
+
+        <p><b>Discos duros:</b> El disco duro (HD o HDD) almacena información en un ordenador, siendo la unidad principal de almacenamiento. Existen discos duros magnéticos, con partes mecánicas y varios discos giratorios, y SSD (Solid State Drive), sin partes móviles y basados en memorias flash. Los discos magnéticos tienen tamaños como 3,5" y 2,5" y giran a velocidades de 5400-15,000 RPM. Su capacidad, velocidad de rotación, memoria caché y interfaz (PATA, SATA, SCSI) son características clave. Los SSD, basados en memorias flash, ofrecen mayor velocidad, sin partes móviles y utilizan tecnologías de conexión como SATA, PCI-Express y M.2.</p>
+    
+        <br>
+
+       <p><b>Unidades ópticas:</b> Unidades ópticas, originadas en los 80, están siendo reemplazadas por unidades Flash. Tipos: CD/DVD, Blu-ray. Tamaño similar a un libro de bolsillo, con botón frontal. Se montan en el gabinete y tienen conexiones para cableado y alimentación. Formatos importantes: CD-ROM, CD-R, CD-RW, DVD, DVD-R, DVD+R, DVD-RW, DVD+RW, DVD-R DL, DVD+R DL, BD-R, BD-R DL, BDXL, BD-RE, BD-RE DL y TL. "R" es "grabable", "RW" es "regrabable". Blu-ray puede llegar a 128GB.</p> 
+    
+        <br>
+
+        <p><b>Unidades flash:</b> Las unidades flash son dispositivos de memoria portátiles y programables electrónicamente, evolucionadas de la EEPROM. Utilizan semiconductores para lectura y escritura mediante impulsos eléctricos. No pierden información al desconectarse, facilitando el transporte de datos. Se encuentran en tarjetas de memoria para dispositivos como teléfonos y cámaras, así como en lápices de memoria o pendrives con conector USB, siendo comúnmente usadas como dispositivos de almacenamiento externo.</p>
+    
+        <br>
+
+        <p><b>Tarjeta gráfica:</b> La tarjeta gráfica es esencial para funciones visuales en el ordenador, como juegos y edición de medios. Tiene su propio procesador (GPU) y memoria (VRAM). Las especificaciones clave incluyen GPU, cantidad de VRAM, ancho de bus de la memoria y puertos como VGA, DVI, HDMI, DisplayPort y USB Tipo C. Algunas necesitan alimentación adicional con conectores de 6 u 8 pines.</p>
+    
+        <br>
+
+        <p><b>Tarjeta de sonido:</b> La tarjeta de sonido maneja el audio y se conecta a altavoces, auriculares, etc. Puede estar integrada en placas base o como tarjeta de expansión en el bus PCI o PCI Express. Tipos según canales, como estéreo o cuadrafónico. Conectores comunes incluyen jack rosa (micrófono), azul (entrada digital), verde (altavoces frontales), negro (altavoces traseros), plateado (altavoces laterales) y naranja (SPDIF o altavoces centrales/subwoofer).</p>
+    
+        <br>
+
+        <p><b>Tarjeta de red:</b> Las tarjetas de red son cruciales para la conectividad, ya sea por cable o inalámbrica. Pueden integrarse en la placa base o conectarse a través de PCI o PCI-E. Las opciones cableadas incluyen Fast Ethernet (hasta 100 Mbits/s) y Gigabit Ethernet (hasta 1000 Mbits/s). En el ámbito inalámbrico, las variantes WiFi comprenden estándares como 802.11g (hasta 54 Mbits/s) y 802.11n (hasta 300 Mbits/s). El conector principal actual es el RJ45, aunque en el pasado se usaron RJ11 y BNC, que ahora están prácticamente en desuso.</p>
+    
+        <br>
+
+        <p><b>Otras tarjetas de expansión:</b> Las tarjetas de expansión amplían las capacidades del ordenador, como las tarjetas de puertos USB para más conectividad y las controladoras de disco para superar limitaciones de conectores IDE o SATA en la placa base, posibilitando la conexión de más discos duros al sistema.</p>
+    
+        <br>
+
+        <p><b>Sistemas de alimentación ininterrumpida:</b> Un Sistema de Alimentación Ininterrumpida (SAI o UPS) es esencial para proteger un ordenador de problemas eléctricos como cortes, subidas y bajadas de tensión. Este dispositivo suministra corriente eléctrica en casos de cortes y evita picos de tensión, salvaguardando así los componentes del equipo. Al elegir un SAI, es crucial considerar la potencia en VoltAmperios (VA), el tiempo de autonomía de la batería, el tipo y número de enchufes, y la tecnología (offline u online), adaptándose a las necesidades específicas del usuario.</p>
+    
+        <br>
+
+        <h1>4. Montaje de equipos microinformáticos</h1>
+
+        <br>
+
+        <p>Pasos necesarios para el montaje de un sistema informático:</p>
+        <ol>
+            <li>En primer lugar es importante disponer de un lugar adecuado para realizar el montaje.</li><br>
+            <li>Como puedes imaginar, antes de empezar debemos tener todos los componentes preparados para su montaje, por lo que debemos comprobar que tenemos todo en la mesa de montaje.</li><br>
+            <li>Una vez tenemos todos los componentes, debemos comprobar que tenemos las herramientas necesarias.</li><br>
+            <li>Empezamos el montaje instalando el microprocesador en la placa base.</li><br>
+            <li>Luego instalamos los módulos de memoria.</li><br>
+            <li>Configuramos la placa base y la montamos en la caja.</li><br>
+            <li>Instalamos la fuente de alimentación.</li><br>
+            <li>Instalamos las unidades de almacenamiento.</li><br>
+            <li>Instalamos las unidades ópticas.</li><br>
+            <li>Instalamos otros componentes.</li><br>
+            <li>Verificamos el montaje.</li><br>
+        </ol>
+
+        <h1>4.1. Normas básicas para el montaje.</h1>
+
+        <br>
+
+        <p>Al realizar un montaje de ordenador, es esencial seguir normas básicas para garantizar un proceso seguro y eficiente:</p>
+        <ol>
+            <li><b>Trabaja sin corriente:</b> Desconecta la fuente de alimentación mientras manipulas el interior del ordenador</li><br>
+            <li><b>No uses la fuerza:</b> Los componentes están normalizados, evita aplicar fuerza.</li><br>
+            <li><b>Vigila las cargas electrostáticas:</b> Asegúrate de no tener electricidad estática, usa una pulsera antiestática o toca objetos conectados a tierra.</li><br>
+            <li><b>Planifica los pasos:</b> Escribe un guión para evitar errores.</li><br>
+            <li><b>Coge las tarjetas por los bordes:</b> Evita tocar los componentes electrónicos.</li><br>
+            <li><b>No toques los contactos:</b> Puedes afectar la transmisión de la señal.</li><br>
+            <li><b>Evita comer, beber o fumar durante el trabajo.</b></li><br>
+        </ol>
+
+        <p>En cuanto al lugar de trabajo:</p>
+
+        <ul>
+            <li>Disponer de buena iluminación.</li><br>
+            <li>Utilizar una mesa amplia, preferiblemente de madera.</li><br>
+            <li>Evitar alfombras o mantas cercanas para prevenir electricidad estática.</li><br>
+            <li>Asegurar un sistema de refrigeración para evitar sobrecargas por calor y problemas estáticos.</li><br>
+        </ul>
+
+        <h1>4.2. Herramientas básicas para el montaje</h1>
+
+        <br>
+
+        <p>Las herramientas que todo taller de montaje y/o reparación de equipos debe tener son:</p>
+        <ol>
+            <li>Pulsera antiestática.</li><br>
+            <li>Destornillador plano.</li><br>
+            <li>Destornillador tipo Phillips o estrella de 6 mm.</li><br>
+            <li>Destornillador tipo Phillips o estrella de 3,5 mm.</li><br>
+            <li>Alicates de punta plana de 5 mm.</li><br>
+            <li>Alicates de punta curva de 3 mm.</li><br>
+            <li>Alicates de corte pequeño.</li><br>
+            <li>Pinzas de electrónica.</li><br>
+            <li>Llave de tubo.</li><br>
+        </ol>
+        
+        <h1>4.3. Instalación del microprocesador</h1>
+        
+        <br>
+
+        <p>Para armar un equipo informático, comienza instalando el microprocesador en la placa base antes de colocarla en la caja. Asegúrate de instalar un sistema de refrigeración, generalmente compuesto por un disipador y un ventilador. Utiliza pasta térmica para mejorar la transferencia de calor del procesador al disipador, la cual suele venir con el disipador en equipos nuevos.</p>
+
+        <br>
+
+        <h1>4.4. Instalación de la memoria</h1>
+
+        <br>
+
+        <p>Una vez tenemos instalado el microprocesador le toca el turno a la memoria RAM. Para realizar este paso seguiremos todavía con la placa base sin montar en la caja.</p>
+
+        <br>
+
+        <h1>4.5. Instalación de la placa base</h1>
+
+        <br>
+
+        <p>Con la placa base, el fabricante proporciona componentes como tornillos para fijarla a la caja, una placa para el panel trasero de conectores externos, un altavoz interno y cables para unidades de almacenamiento.</p>
+
+        <br>
+
+        <h1>4.6. Instalación del cableado del frontal de la caja</h1>
+
+        <br>
+
+        <p>La conexión de componentes frontales en la caja del ordenador, como interruptores, luces y puertos USB, se realiza mediante pines o jumpers en la esquina de la placa base. Los conectores esenciales incluyen Speaker (altavoz interno para pitidos de aviso), Hdd led (luz de actividad del disco duro), Power led (luz de encendido) y los interruptores Power sw y Reset sw (encendido y reinicio, respectivamente). Estos deben conectarse correctamente para un funcionamiento adecuado.</p>
+
+        <br>
+
+        <h1>4.7. Instalación de las unidades de almacenamiento</h1>
+
+        <br>
+
+        <p>La instalación de unidades de almacenamiento se realiza en pocos pasos simples. Es necesario conocer el tamaño de la unidad para seleccionar la bahía adecuada (3.5 o 5.25 pulgadas) y considerar la circulación de aire. Se configura la unidad, se monta en el raíl seleccionado, se conecta el cable de datos a la placa base y el de alimentación a la fuente. Este proceso asegura una instalación eficiente y funcional.</p>
+
+        <br>
+
+        <h1>4.8. Instalación de las tarjetas de expansión</h1>
+
+        <br>
+
+        <p>Para instalar una tarjeta de expansión, sigue estos pasos:</p>
+        <ol>
+            <li>Localiza la ranura adecuada, priorizando la ventilación.</li><br>
+            <li>Retira la pletina metálica trasera de la caja.</li><br>
+            <li>Inserta la tarjeta en la ranura, asegurándote de un encaje correcto.</li><br>
+            <li>Fija el brazo metálico con un tornillo o elemento plástico.</li><br>
+            <li>Conecta cables adicionales, si los hay.</li><br>
+            <li>Para tarjetas potentes, verifica y conecta el cable de alimentación, si es necesario.</li><br>
+        </ol>
+
+        <h1>4.9. Instalación de la fuente de alimentación</h1>
+
+        <br>
+
+        <p>El procedimiento de instalación de la fuente debe seguir los siguientes pasos:</p>
+
+        <br>
+
+        <ol>
+            <li>Instalamos la fuente en la caja en caso de que esta no venga integrada en la caja.</li><br>
+            <li>Conectamos el conector ATX de 20 o 24 pines en la placa base.</li><br>
+            <li>Conectamos el conector ATX-12v de 4 0 8 pines en la placa base.</li><br>
+            <li>Conectamos el conector para el disco duro.</li><br>
+            <li>Conectador el conector para el dispositivo óptico</li><br>
+        </ol>
+
+        <h1>5. Verificación y pruebas postinstalación</h1>
+
+        <br>
+
+        <p>Después del montaje, la verificación es crucial para garantizar el correcto funcionamiento de los componentes. Las etapas de verificación incluyen:</p>
+    
+        <br>
+
+        <ol>
+            <li>Conexión a la corriente eléctrica y encendido, verificando el proceso POST y la detección de memoria.</li><br>
+            <li>Comprobación de los LEDs del frontal de la caja y la temperatura del microprocesador mediante la BIOS.</li><br>
+            <li>Chequeo de la memoria RAM y utilización de herramientas de diagnóstico para otros componentes.</li><br>
+            <li>Durante el arranque, el POST realiza una comprobación inicial, emitiendo pitidos en caso de errores que varían según el fabricante del BIOS.</li><br>
+            <li>Verificación de los LEDs del frontal, asegurándose de que se enciendan correctamente.</li><br>
+            <li>Comprobación de la temperatura del microprocesador y del sistema en el BIOS, buscando valores adecuados y asegurándose de que los ventiladores y el voltaje estén dentro de los rangos adecuados.</li><br>
+        </ol>
+
+        <h1>6. Periféricos de un sistema informático</h1>
+
+        <br>
+
+        <p>Los periféricos son dispositivos que facilitan la comunicación entre el usuario y el ordenador, conectándose de diversas maneras. Se clasifican en tres tipos según el flujo de información:</p>
+        <ol>
+            <li><b>Periféricos de entrada:</b>  Proporcionan información al ordenador, como el teclado.</li><br>
+            <li><b>Periféricos de salida:</b> Suministran información al usuario o equipo, como una impresora.</li><br>
+            <li><b>Periféricos de entrada/salida:</b> Permiten la comunicación en ambos sentidos, como una pantalla táctil.</li><br>
+        </ol>
+
+        <h1>7. Prevención de riesgos laborales y protección ambiental</h1>
+
+        <br>
+
+        <p>En todas las actividades laborales, incluyendo la instalación y mantenimiento de equipos informáticos, existe el riesgo de accidentes. La "Ley de Prevención de Riesgos Laborales" en España regula la seguridad en el trabajo para los empleados. Conceptos clave incluyen prevención, riesgo laboral, daños derivados del trabajo, riesgo laboral grave, entidades peligrosas, equipo de trabajo, condición de trabajo y equipo de protección individual. Además, es crucial considerar el impacto ambiental en todas las profesiones para gestionar adecuadamente los residuos y preservar el medio ambiente.</p>
     </body>
 </html>
