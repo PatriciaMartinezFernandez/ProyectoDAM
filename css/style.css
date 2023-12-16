@@ -136,12 +136,12 @@ blockquote {
 
 .nav ul a {
     color: #0174DF;
-    text-decoration: none
+    text-decoration: none;
 }
 
 ul li {
     padding: 5px;
-    padding-left: 10px
+    padding-left: 10px;
 }
 
 .subjects, .paragraph {
@@ -213,7 +213,8 @@ img.inlinethree {
 }
 
 .nav ul {
-    margin-top: 10px
+    margin-top: 10px;
+    padding-left: 0px;
 }
 
 .nav ul li {
