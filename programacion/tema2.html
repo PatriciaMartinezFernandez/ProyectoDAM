@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programación Elemental</title>
+    <link rel="icon" href="">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="main">
+        <div class="nav">
+            <a href="../home.html">
+                <img src="../img/jaimemartinez.png" alt="logo">
+            </a>
+            <h1>Jaime Martínez</h1>
+            <ul>
+                <li>
+                    <a href="../home.html">/home</a>
+                </li>
+                <li>
+                    <a href="../aboutme.html">/about</a>
+                </li>
+                <li>
+                    <a href="https://github.com/PatriciaMartinezFernandez" target="_blank" title="Github: PatriciaMartinezFernandez">/github</a>
+                </li>
+                <li>
+                    <a href="mailto:martinez.fernandez.patricia@iescamas.es" title="martinez.fernandez.patricia@iescamas.es">/email</a>
+                </li>
+            </ul>
+            <hr>
+        </div>
+
+        <h1>1. Variables</h1>
+
+        <br>
+
+        <p>Una variable es un dato que se almacenan memoria y se utiliza para realizar procesamientos específicos. Por ejemplo, para el cálculo del área de un triángulo, se requieren tres variables: base, altura y resultado. Cada variable se define mediante un identificador, un tipo de dato y un valor actual.</p>
+    
+        <br>
+
+        <h1>2. Tipos de Datos</h1>
+
+        <br>
+
+        <table>
+            <tr>
+                <th rowspan="4">Primitivos</th>
+                <td>Booleanos</td>
+                <td colspan="3">Boolean</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Numéricos</td>
+                <td>Carácter</td>
+                <td colspan="2">Char</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Integral</td>
+                <td>Entero</td>
+                <td>Byte, short, int, long</td>
+            </tr>
+            <tr>
+                <td>Decimal</td>
+                <td>Float, double</td>
+            </tr>
+            <tr>
+                <th>No primitivos</th>
+                <td colspan="4">String, arrays...</td>
+            </tr>
+        </table>
+
+        <br>
+
+        <table>
+            <caption>Tipos Primitivos</caption>
+            <thead>
+                <tr>
+                    <th>Tipo</th>
+                    <th>Representación</th>
+                    <th>Tamaño (bits)</th>
+                    <th>Rango</th>
+                    <th>Ejemplo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>boolean</td>
+                    <td>verdadero o falso</td>
+                    <td>1</td>
+                    <td>{true, false}</td>
+                    <td>boolean desempleado = false;</td>       
+                </tr>
+                <tr>
+                    <td>char</td>
+                    <td>Carácter Unicode (sin signo)</td>
+                    <td>16</td>
+                    <td>{0 - 65535}</td>
+                    <td>char letraInicio = 'm';</td>
+                </tr>
+                <tr>
+                    <td>byte</td>
+                    <td>Nº entero con signo</td>
+                    <td>8</td>
+                    <td>{-128 - 127}</td>
+                    <td>byte num = 8;</td>
+                </tr>
+                <tr>
+                    <td>short</td>
+                    <td>Nº entero con signo</td>
+                    <td>16</td>
+                    <td>{-32768 - 32767}</td>
+                    <td>short num = 123;</td>
+                </tr>
+                <tr>
+                    <td>int</td>
+                    <td>Nº entero con signo</td>
+                    <td>32</td>
+                    <td>{-2147483648 - 2147483647}</td>
+                    <td>int num = 123456789;</td>
+                </tr>
+                <tr>
+                    <td>long</td>
+                    <td>Nº entero con signo</td>
+                    <td>64</td>
+                    <td>{-9223372036854775808 - 9223372036854775807}</td>
+                    <td>long num = 1234123412341234;</td>
+                </tr>
+                <tr>
+                    <td>float</td>
+                    <td>Nº decimal (IEEE754)</td>
+                    <td>32</td>
+                    <td>{1.40239846 x 10<sup>-45</sup> - 3.40282347 x 10<sup>38</sup>}</td>
+                    <td>float num = 123.456f</td>
+                </tr>
+                <tr>
+                    <td>double</td>
+                    <td>Nº decimal (IEEE754)</td>
+                    <td>64</td>
+                    <td>{4.940656484124654 x 10<sup>-324</sup> - 1.7976931348623157 x 10<sup>308</sup>}</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br>
+
+        <table>
+            <caption>Tipo No Primitivo</caption>
+            <thead>
+                <tr>
+                    <th>Tipo</th>
+                    <th>Tamaño (bits)</th>
+                    <th>Ejemplo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <td>String</td>
+                <td>Depende de la codificación usada; por defecto (nº caracteres * 2) bytes</td>
+                <td>String mensaje = "Hola Mundo!";</td>
+            </tbody>
+        </table>
+
+        <br>
+
+        <h1>3. Ejercicio resuelto: Calcular el área de un círculo</h1>
+
+        <br>
+
+        <code>
+            <pre>
+        public static void main (String[] args){
+            double radio;
+            double area;
+
+            //Asignar valor a radio
+            radio = 20;
+
+            //Calcula area
+            area = radio * radio * 3.14159;
+
+            //Muestra resultado
+            System.out.println("El área del círculo de radio " + radio + " es " + area);
+            }
+            </pre>
+        </code>
+        
+        <br>
+
+        <h1>4. Constantes</h1>
+
+        <br>
+        
+        <p>Una variable que mantiene un valor fijo se denomina constante. Para definir este tipo de valores inmutables, se utiliza la palabra clave final antes del tipo de dato, seguido del identificador, que debe de escribirse en mayúsculas, y el valor asignado. Por ejemplo, <code>final double PI = 3.14159;</code></p>
+    
+        <br>
+
+        <h1>5. Scanner</h1>
+
+        <br>
+
+        <p>Hasta ahora, hemos manejado valores literales, es decir, datos escritos directamente en el código. Para permitir que el usuario introduzca valores por teclado utilizamos la clase Scanner en Java, que forma parte del paquete java.util.</p>
+
+        <br>
+        
+        <code>
+            <pre>
+        var sc = new Scanner(System.in);
+        //Resto de código
+        sc.close;
+            </pre>
+        </code>
+
+        <br>
+
+        <p>La clase Scanner proporciona mecanismos para leer distintos tipos de datos, como números con sc.nextInt() y cadenas de caracteres con sc.nextLine(). Estos métodos se utilizan a la derecha de una asignación. Por ejemplo, <code>int numero = sc.nextInt();</code></p>
+    
+        <h1>6. Operadores de asignación combinado</h1>
+    
+        <br>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Operador</th>
+                    <th>Descripción</th>
+                    <th>Ejemplo</th>
+                    <th>Equivalente</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>+=</td>
+                    <td>Suma y asigna</td>
+                    <td>i += 8</td>
+                    <td>i = i + 8</td>
+                </tr>
+                <tr>
+                    <td>-=</td>
+                    <td>Resta y asigna</td>
+                    <td>i -= 8</td>
+                    <td>i = i - 8</td>
+                </tr>
+                <tr>
+                    <td>*=</td>
+                    <td>Multiplica y asigna</td>
+                    <td>i *= 8</td>
+                    <td>i = i * 8</td>
+                </tr>
+                <tr>
+                    <td>/=</td>
+                    <td>Divide y asigna</td>
+                    <td>i /= 8</td>
+                    <td>i = i / 8</td>
+                </tr>
+                <tr>
+                    <td>%=</td>
+                    <td>Resto y asigna</td>
+                    <td>i %= 8</td>
+                    <td>i = i % 8</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br>
+
+        <h1>7. Operadores de incremente y decremento</h1>
+    
+        <br>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Operador</th>
+                    <th>Nombre</th>
+                    <th>Descripción</th>
+                    <th>Ejemplo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>++var</td>
+                    <td>Preincremento</td>
+                    <td>Incrementa var en 1 y usa el nuevo valor de var en la sentencia</td>
+                    <td>int j = ++i;</td>
+                </tr>
+                <tr>
+                    <td>var++</td>
+                    <td>Posincremento</td>
+                    <td>Incrementa var en 1 pero usa el valor original en la sentencia</td>
+                    <td>int j = i++;</td>
+                </tr>
+                <tr>
+                    <td>--var</td>
+                    <td>Predecremento</td>
+                    <td>Decrementa var en 1 y usa el nuevo valor de var en la sentencia</td>
+                    <td>int j = --i;</td>
+                </tr>
+                <tr>
+                    <td>var--</td>
+                    <td>Posdecremento</td>
+                    <td>Decrementa var en 1 pero usa el valor original en la sentencia</td>
+                    <td>int j = i--;</td>
+                </tr>
+            </tbody>
+        </table>
+    
+        <br>
+
+        <h1>8. Operadores de comparación</h1>
+
+        <br>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Operador</th>
+                    <th>Operación</th>
+                    <th>Ejemplo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>></td>
+                    <td>Mayor</td>
+                    <td>a > b</td>
+                </tr>
+                <tr>
+                    <td>>=</td>
+                    <td>Mayor o igual</td>
+                    <td>a >= b</td>
+                </tr>
+                <tr>
+                    <td><</td>
+                    <td>Menor</td>
+                    <td>a < b</td>
+                </tr>
+                <tr>
+                    <td><=</td>
+                    <td>Menor o igual</td>
+                    <td>a <= b</td>
+                </tr>
+                <tr>
+                    <td>==</td>
+                    <td>Igualdad</td>
+                    <td>a == b</td>
+                </tr>
+                <tr>
+                    <td>!=</td>
+                    <td>Desigualdad</td>
+                    <td>a != b</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br>
+
+        <h1>9. Operadores Lógicos</h1>
+
+        <br>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Operador</th>
+                    <th>Operación</th>
+                    <th>Ejemplo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>&&</td>
+                    <td>AND lógico</td>
+                    <td>x > 0 && x < 10</td>
+                </tr>
+                <tr>
+                    <td>||</td>
+                    <td>OR lógico</td>
+                    <td>x <= 5 || x > 100</td>
+                </tr>
+                <tr>
+                    <td>!</td>
+                    <td>Negación lógica</td>
+                    <td>boolean v = true; !v; //false</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
