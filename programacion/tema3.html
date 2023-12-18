@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecciones</title>
+    <link rel="icon" href="">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="main">
+        <div class="nav">
+            <a href="../home.html">
+                <img src="../img/jaimemartinez.png" alt="logo">
+            </a>
+            <h1>Jaime Martínez</h1>
+            <ul>
+                <li>
+                    <a href="../home.html">/home</a>
+                </li>
+                <li>
+                    <a href="../aboutme.html">/about</a>
+                </li>
+                <li>
+                    <a href="https://github.com/PatriciaMartinezFernandez" target="_blank" title="Github: PatriciaMartinezFernandez">/github</a>
+                </li>
+                <li>
+                    <a href="mailto:martinez.fernandez.patricia@iescamas.es" title="martinez.fernandez.patricia@iescamas.es">/email</a>
+                </li>
+            </ul>
+            <hr>
+        </div>
+
+        <h1>1. Sentencia IF-ELSE</h1>
+
+        <br>
+
+        <p>La sentencia if-else en Java permite implementar estructuras condicionales simples. Su formato básico es el siguiente:</p>
+        
+        <br>
+
+        <code>
+            <pre>
+        if (condicion) {
+            //acciones si se cumple la condicion
+        } else {
+            //acciones si no se cumple la condicion
+        }      
+            </pre>
+        </code>
+
+        <p>El bloque else no es obligatorio y solo se añade si se desea realizar alguna acción específica cuando la condición no se cumple.</p>
+
+        <br>
+
+        <h1>2. Sentencia IF-ELSE-IF</h1>
+
+        <br>
+
+        <p>Deriva de if-else, nos permite evaluar una segunda, tercera, cuarta... condición si la primera, segunda, tercera... no se cumple.</p>
+    
+        <br>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Mal</th>
+                    <th>Bien</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                       <pre>
+        if (score >= 90)
+            System.out.println ("A");
+        else
+        if (score >= 80)
+            System.out.println ("B");
+            else
+            if (score >= 70)
+                System.out.println ("C");
+                else
+                if (score >= 60)
+                    System.out.println ("D");
+                    else
+                        System.out.pritnln ("F");
+                       </pre> 
+                    </td>
+                    <td>
+                        <pre>
+        if (score >= 90)
+            System.out.println ("A");
+        else if (score >= 80)
+            System.out.println ("B");    
+        else if (score >= 70)
+            System.out.println ("C");   
+        else if (score >= 60)
+            System.out.println ("D");        
+        else 
+            System.out.println ("F");    
+                        </pre>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h1>3. Sentencia SWITCH</h1>
+
+        <br>
+
+        <p>La sentencia switch en Java ofrece una forma eficiente de evaluar múltiples casos sin pasar por todos ellos. Aunque limitada a condiciones de igualdad, funciona con tipos primitivos y cadenas. Existen dos versiones: como sentencia, para ejecutar bloques de código, y como expresión, para asignar directamente resultados.</p>
+        
+        <br>
+
+        <code>
+            <pre>
+        switch (valor) {
+            case 0: calcular los impuestos para declarante soltero;
+                break;
+            case 1: calcular los impuestos para declarante casado conjuntamente;
+                break;
+            case 2: calcular los impuestos para declarante casado por separado;
+                break;
+            case 3: calcular los impuestos para el cabeza de familia;
+                break;
+        }
+            </pre>
+        </code>
+
+        <h1>4. Depuración y depurador</h1>
+
+        <br>
+
+        <p>Los errores lógicos se llaman errores, y corregirlos se conoce como depuración. Un método común es reducir la parte del programa con errores, ya sea rastreándolo manualmente o mediante impresiones de variables. Este enfoque es útil para programas simples, pero para proyectos grandes, es más efectivo usar un depurador. Un depurador facilita la ejecución paso a paso, el seguimiento de métodos, la fijación de puntos de interrupción y la visualización de variables y la pila de llamadas.</p>
+    </div>
+</body>
+</html>
