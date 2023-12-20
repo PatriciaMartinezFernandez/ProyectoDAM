@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bucles</title>
+    <link rel="icon" href="">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="main">
+        <div class="nav">
+            <a href="../home.html">
+                <img src="../img/jaimemartinez.png" alt="logo">
+            </a>
+            <h1>Jaime Martínez</h1>
+            <ul>
+                <li>
+                    <a href="../home.html">/home</a>
+                </li>
+                <li>
+                    <a href="../aboutme.html">/about</a>
+                </li>
+                <li>
+                    <a href="https://github.com/PatriciaMartinezFernandez" target="_blank" title="Github: PatriciaMartinezFernandez">/github</a>
+                </li>
+                <li>
+                    <a href="mailto:martinez.fernandez.patricia@iescamas.es" title="martinez.fernandez.patricia@iescamas.es">/email</a>
+                </li>
+            </ul>
+            <hr>
+        </div>
+
+        <h1>1. Bucle while</h1>
+
+        <br>
+
+        <ol>
+            <li><b>Iteraciones Indeterminadas:</b> El bucle permite repetir un conjunto de instrucciones varias veces, pero no se especifica previamente cuántas veces o en qué momento se detendrá.</li><br>
+            <li><b>Desconocimiento Previo:</b> A diferencia de algunos bucles que requieren conocer el número exacto de repeticiones antes de su ejecución, este tipo de bucle no exige ese conocimiento previo.</li><br>
+            <li><b>Expresión Booleana de Control:</b> A diferencia de algunos bucles que requieren conocer el número exacto de repeticiones antes de su ejecución, este tipo de bucle no exige ese conocimiento previo.</li><br>
+            <li><b>Modificación de la Expresión Booleana:</b> Se requiere que al menos una sentencia dentro del bucle modifique algo para que, en algún momento, la expresión booleana se evalúe como falsa, asegurando la eventual terminación del bucle.</li><br>
+            <li><b>Declaración e Inicialización de Variables:</b> Las variables de la expresión de control deben ser declaradas e inicializadas antes del bucle, garantizando que el bucle tenga acceso a valores concretos desde el principio.</li><br>
+            <li><b>Sintaxis del Bucle while:</b><br><br>
+            <code>
+                <pre>
+            while (condición) {
+                //acciones a ejecutar
+             }
+                </pre>
+            </code>
+            </li>
+        </ol>
+
+        <h1>2. Bucle do-while</h1>
+
+        <br>
+
+        <ol>
+            <li><b>Iteraciones Indeterminadas:</b> Permite repetir un bloque de código un número indeterminado de veces sin saber previamente la cantidad de repeticiones.</li><br>
+            <li><b>Variante con respecto al Bucle while:</b> Se destaca que, a diferencia del bucle while convencional, el bucle do-while garantiza que al menos se ejecuta una iteración, ya que la condición se evalúa después de ejecutar el bloque de código.</li><br>
+            <li><b>Expresión Booleana de Control:</b> Utiliza una expresión booleana que, mientras sea verdadera, mantiene la ejecución en el bucle.</li><br>
+            <li><b>Modificación de la Expresión Booleana:</b> Al igual que en el bucle while, se requiere que al menos una sentencia dentro del cuerpo del bucle modifique algo para que, en algún momento, la expresión booleana se evalúe como falsa, asegurando la eventual terminación del bucle.</li><br>
+            <li><b>Declaración e Inicialización de Variables:</b> Las variables de la expresión de control deben ser declaradas e inicializadas antes del bucle, asegurando que el bucle tenga acceso a valores concretos desde el principio.</li><br>
+            <li><b>Sintaxis del Bucle do-while:</b><br><br>
+            <code>
+                <pre>
+            do {
+                //acciones a ejecutar
+            } while (condición);    
+                </pre>
+            </code>
+            </li>
+        </ol>
+
+        <h1>3. Bucle for</h1>
+
+        <br>
+
+        <ol>
+            <li><b>Iteraciones Determinadas:</b> Permite repetir un bloque de código un número determinado de veces, conocido de antemano.</li><br>
+            <li><b>Declaración/Inicialización:</b>
+                <ul><br>
+                    <li>Se ejecuta una sola vez al inicio del bucle.</li><br>
+                    <li>Se utiliza para declarar y/o inicializar una o más variables que gestionarán el bucle.</li><br>
+                    <li>Si se declara la variable aquí, su alcance se limita al bucle.</li><br>
+                </ul>
+            </li><br>
+            <li><b>Condición:</b>
+                <ul><br>
+                    <li>Es una expresión booleana que determina si se debe continuar en el bucle o salir de él.</li><br>
+                    <li>La condición de continuación se evalúa antes de cada iteración; si es verdadera, se realiza una iteración más.</li><br>
+                </ul>
+            </li><br>
+            <li><b>Incremento/Decremento:</b>
+                <ul><br>
+                    <li>Se ejecuta después de ejecutar las acciones del cuerpo del bucle, en cada iteración.</li><br>
+                    <li>Incrementa o decrementa las variables de control declaradas o inicializadas en el propio bucle.</li><br>
+                    <li>Puede realizar incrementos o decrementos en más de una unidad.</li><br>
+                </ul>
+            </li><br>
+            <li><b>Sintaxis del Bucle for:</b><br><br>
+                <code>
+                    <pre>
+                for (declaración/inicialización; condición; incremento/decremento) {
+                    //acciones a ejecutar
+                }        
+                    </pre>
+                </code>
+            </li>
+        </ol>
+
+        <h1>4. Recomendaciones</h1>
+
+        <br>
+
+        <p>Se recomienda el uso del bucle for cuando se conoce el número exacto de repeticiones, como en la impresión de un mensaje 100 veces. Para situaciones donde el número de repeticiones es desconocido, se prefiere el bucle while, como al leer números hasta que la entrada sea 0. El bucle do-while es útil como reemplazo del bucle while cuando es necesario ejecutar el cuerpo antes de evaluar la condición de continuación. La elección entre estos bucles depende de la claridad y la lógica específica del código.</p>
+
+        <br>
+
+
+
+    </div>
+</body>
+</html>
